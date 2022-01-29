@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,14 +37,12 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <form onSubmit={handleEvent}>
-          <input
-            type="search"
-            onChange={getWord}
-            defaultValue={props.defaultWord}
-          />{" "}
-          <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
+          <input type="search" onChange={getWord} />{" "}
+          <button>
+            {" "}
+            <FontAwesomeIcon icon={faSearch} className="icon"></FontAwesomeIcon>
+          </button>
         </form>
-
         <Results results={results} />
       </div>
     );

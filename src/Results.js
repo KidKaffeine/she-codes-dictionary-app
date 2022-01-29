@@ -1,4 +1,5 @@
 import React from "react";
+import "./Results.css";
 import Definition from "./Definition";
 import Phonetics from "./Phonetics";
 

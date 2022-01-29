@@ -7,13 +7,12 @@ export default function Phonetics(props) {
     <div className="Phonetics">
       {props.result.map((diction, index) => {
         return (
-          <div key={index}>
+          <span key={index} className="phonetics">
             <a href={diction.audio}>
-              <FontAwesomeIcon icon={faPlayCircle}></FontAwesomeIcon>{" "}
+              <FontAwesomeIcon icon={faPlayCircle} size="2x"></FontAwesomeIcon>{" "}
             </a>
-            <br />
             <p>{diction.text}</p>
-          </div>
+          </span>
         );
       })}
     </div>

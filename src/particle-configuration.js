@@ -1,4 +1,8 @@
 const partConfiguration = {
+  fullScreen: {
+    enable: true,
+    zIndex: 0,
+  },
   particles: {
     number: {
       value: 279,
@@ -14,7 +18,7 @@ const partConfiguration = {
       type: "circle",
       stroke: {
         width: 0,
-        color: "#655D8A",
+        color: "#fff",
       },
       polygon: {
         nb_sides: 5,
@@ -26,7 +30,7 @@ const partConfiguration = {
       },
     },
     opacity: {
-      value: 0.3,
+      value: 0.6,
       random: true,
       anim: {
         enable: false,
@@ -67,9 +71,8 @@ const partConfiguration = {
       },
     },
   },
-
   interactivity: {
-    detect_on: "canvas",
+    detect_on: "window",
     events: {
       onhover: {
         enable: true,

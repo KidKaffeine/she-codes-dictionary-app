@@ -1,0 +1,78 @@
+.Dictionary {
+  color: #fff;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.Dictionary section {
+  border: 1px solid rgb(136, 69, 163);
+  border-radius: 5px;
+  margin: 15px;
+  padding: 20px;
+}
+
+.Dictionary input {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px dotted rgb(136, 28, 179);
+  color: #fff;
+  padding: 5px 20px;
+  margin: 15px;
+  text-indent: 0em;
+}
+
+.Dictionary input:focus {
+  outline: none;
+}
+
+.Dictionary button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.Dictionary .icon,
+.Dictionary .phonetics a {
+  color: rgb(136, 28, 179);
+}
+
+.Dictionary .icon:hover,
+.Dictionary .phonetics a:hover {
+  color: rgb(204, 184, 212);
+}
+
+.Dictionary h1 {
+  margin: 15px;
+}
+
+.Dictionary .phonetics p,
+.Dictionary .phonetics a {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.Dictionary h3 {
+  text-align: center;
+}
+
+.Dictionary ul li {
+  list-style: none;
+  padding: 0px 4px;
+}
+
+.Dictionary ul {
+  padding: 0;
+  display: inline-block;
+  line-height: 0.3;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+@media only screen and (max-width: 576px) {
+  .Dictionary {
+    width: 100%;
+  }
+}

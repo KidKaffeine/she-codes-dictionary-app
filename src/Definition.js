@@ -4,15 +4,18 @@ import Synonyms from "./Synonyms";
 export default function Definition(props) {
   return (
     <div className="Definition">
-      <h3>{props.definition.partOfSpeech}</h3>
+      <h3>
+        <em>{props.definition.partOfSpeech}</em>
+      </h3>
       {props.definition.definitions.map((interpretation, index) => {
         return (
-          <div key={index}>
+          <section key={index}>
             <p>{interpretation.definition}</p>
-            <p>{interpretation.example}</p>
-
+            <p className="text-muted">
+              <em>{interpretation.example}</em>
+            </p>
             <Synonyms result={interpretation.synonyms} />
-          </div>
+          </section>
         );
       })}
     </div>
