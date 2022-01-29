@@ -34,39 +34,12 @@
   border: none;
 }
 
-.Dictionary .icon,
-.Dictionary .phonetics a {
+.Dictionary .Icon {
   color: rgb(136, 28, 179);
 }
 
-.Dictionary .icon:hover,
-.Dictionary .phonetics a:hover {
+.Dictionary .Icon:hover {
   color: rgb(204, 184, 212);
-}
-
-.Dictionary h1 {
-  margin: 15px;
-}
-
-.Dictionary .phonetics p,
-.Dictionary .phonetics a {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.Dictionary h3 {
-  text-align: center;
-}
-
-.Dictionary ul li {
-  list-style: none;
-  padding: 0px 4px;
-}
-
-.Dictionary ul {
-  padding: 0;
-  display: inline-block;
-  line-height: 0.3;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");

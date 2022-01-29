@@ -1,4 +1,5 @@
 import React from "react";
+import "./Definition.css";
 import Synonyms from "./Synonyms";
 
 export default function Definition(props) {

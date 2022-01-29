@@ -1,0 +1,10 @@
+.Synonyms ul li {
+  list-style: none;
+  padding: 0px 4px;
+}
+
+.Synonyms ul {
+  padding: 0;
+  display: inline-block;
+  line-height: 0.3;
+}

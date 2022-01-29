@@ -40,7 +40,7 @@ export default function Dictionary(props) {
           <input type="search" onChange={getWord} />{" "}
           <button>
             {" "}
-            <FontAwesomeIcon icon={faSearch} className="icon"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faSearch} className="Icon"></FontAwesomeIcon>
           </button>
         </form>
         <Results results={results} />

@@ -1,0 +1,13 @@
+.Phonetics .Phonetics p,
+.Phonetics .Phonetics a {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.Phonetics .Phonetics a {
+  color: rgb(136, 28, 179);
+}
+
+.Phonetics .Phonetics a:hover {
+  color: rgb(204, 184, 212);
+}
