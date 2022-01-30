@@ -20,7 +20,7 @@
   border: 1px dotted rgb(136, 28, 179);
   color: #fff;
   padding: 5px 20px;
-  margin: 15px;
+  margin-left: 15px;
   text-indent: 0em;
 }
 
@@ -32,6 +32,10 @@
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
+}
+
+.Dictionary small {
+  margin: 15px;
 }
 
 .Dictionary .Icon {

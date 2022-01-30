@@ -2,21 +2,31 @@ import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
+import Photos from "./Photos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dictionary(props) {
-  const [keyword, setKeyword] = useState(props.defaultWord);
-  const [results, setResults] = useState("");
-  const [loaded, setLoaded] = useState(false);
+  let [keyword, setKeyword] = useState(props.defaultWord);
+  let [results, setResults] = useState("");
+  let [loaded, setLoaded] = useState(false);
+  let [photo, setPhoto] = useState(undefined);
 
-  function handleResponse(response) {
+  function handleWordResponse(response) {
     setResults(response.data[0]);
+  }
+
+  function handlePhotoResponse(response) {
+    setPhoto(response.data.photos);
   }
 
   function search() {
     let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiURL).then(handleResponse);
+    axios.get(apiURL).then(handleWordResponse);
+    let pexelsApiKey = `563492ad6f917000010000010962508f8d314e1eaac6f4951868600f`;
+    let pexelsApiURL = `https://api.pexels.com/v1/search?query=${keyword}&per_page=12`;
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    axios.get(pexelsApiURL, { headers: headers }).then(handlePhotoResponse);
   }
 
   function handleEvent(event) {
@@ -43,7 +53,11 @@ export default function Dictionary(props) {
             <FontAwesomeIcon icon={faSearch} className="Icon"></FontAwesomeIcon>
           </button>
         </form>
+        <small className="text-muted">
+          suggestion: sea, wine, sun, coffee...{" "}
+        </small>
         <Results results={results} />
+        <Photos photo={photo} />
       </div>
     );
   } else {
