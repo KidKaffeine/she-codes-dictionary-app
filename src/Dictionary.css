@@ -35,6 +35,10 @@
   outline: none;
 }
 
+.Dictionary input::placeholder {
+  background-color: transparent;
+}
+
 .Dictionary button {
   background-color: transparent;
   background-repeat: no-repeat;
