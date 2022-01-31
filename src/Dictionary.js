@@ -46,6 +46,7 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
+        <h1> the dictionary</h1>
         <form onSubmit={handleEvent}>
           <input type="search" onChange={getWord} />{" "}
           <button>
