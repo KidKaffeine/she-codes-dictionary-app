@@ -50,7 +50,10 @@ export default function Dictionary(props) {
           <input type="search" onChange={getWord} />{" "}
           <button>
             {" "}
-            <FontAwesomeIcon icon={faSearch} className="Icon"></FontAwesomeIcon>
+            <FontAwesomeIcon
+              icon={faSearch}
+              className="SearchIcon"
+            ></FontAwesomeIcon>
           </button>
         </form>
         <small className="text-muted">

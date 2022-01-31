@@ -42,11 +42,11 @@
   margin: 15px;
 }
 
-.Dictionary .Icon {
+.Dictionary .SearchIcon {
   color: rgb(136, 28, 179);
 }
 
-.Dictionary .Icon:hover {
+.Dictionary .SearchIcon:hover {
   color: rgb(204, 184, 212);
 }
 
@@ -60,10 +60,15 @@
   text-decoration: none;
   color: rgb(136, 28, 179);
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
 @media only screen and (max-width: 576px) {
   .Dictionary {
     width: 100%;
+  }
+
+  .Dictionary footer {
+    font-size: 12px;
   }
 }
