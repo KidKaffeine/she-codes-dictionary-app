@@ -22,7 +22,7 @@
 }
 
 .Dictionary input {
-  background-color: transparent;
+  background-color: transparent !important;
   border-radius: 5px;
   border: 1px dotted rgb(136, 28, 179);
   color: #fff;
@@ -36,7 +36,7 @@
 }
 
 .Dictionary input::placeholder {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .Dictionary button {
@@ -77,5 +77,11 @@
 
   .Dictionary footer {
     font-size: 12px;
+  }
+}
+
+@media print {
+  .Dictionary input::placeholder {
+    background-color: transparent !important;
   }
 }
