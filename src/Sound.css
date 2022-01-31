@@ -1,9 +1,9 @@
-.Audio .AudioIcon {
+.Sound .AudioIcon {
   color: rgb(136, 28, 179);
   margin-left: 15px;
   margin-top: -5px;
 }
 
-.Audio .AudioIcon:hover {
+.Sound .AudioIcon:hover {
   color: rgb(204, 184, 212);
 }

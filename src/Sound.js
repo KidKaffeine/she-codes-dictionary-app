@@ -1,15 +1,15 @@
 import React from "react";
-import "./Audio.css";
+import "./Sound.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 
-export default function (props) {
-  let audio = new Audio(props.audio);
+export default function Sound(props) {
+  let audio = new Audio(props.sound);
   function handlePlay() {
     audio.play();
   }
   return (
-    <div className="Audio">
+    <div className="Sound">
       <FontAwesomeIcon
         icon={faPlayCircle}
         size="2x"

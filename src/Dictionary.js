@@ -48,7 +48,7 @@ export default function Dictionary(props) {
       <div className="Dictionary">
         <h1> the dictionary</h1>
         <form onSubmit={handleEvent}>
-          <input type="search" onChange={getWord} />{" "}
+          <input type="search" onChange={getWord} autofocus="on" />{" "}
           <button>
             {" "}
             <FontAwesomeIcon
