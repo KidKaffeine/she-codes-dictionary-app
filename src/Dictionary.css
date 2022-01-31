@@ -22,13 +22,13 @@
 }
 
 .Dictionary input {
-  background-color: transparent !important;
+  background-color: transparent;
+  background-repeat: no-repeat;
   border-radius: 5px;
-  border: 1px dotted rgb(136, 28, 179);
+  border: 1px solid rgb(136, 28, 179);
   color: #fff;
   padding: 5px 20px;
   margin-left: 15px;
-  text-indent: 0em;
 }
 
 .Dictionary input:focus {
@@ -36,7 +36,9 @@
 }
 
 .Dictionary input::placeholder {
-  background-color: transparent !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .Dictionary button {
@@ -77,11 +79,5 @@
 
   .Dictionary footer {
     font-size: 12px;
-  }
-}
-
-@media print {
-  .Dictionary input::placeholder {
-    background-color: transparent !important;
   }
 }
