@@ -2,6 +2,7 @@ import React from "react";
 import "./Photos.css";
 
 export default function Photos(props) {
+  console.log(props.photo);
   if (props.photo) {
     return (
       <div className="Photos">
@@ -14,7 +15,7 @@ export default function Photos(props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={pic.src.tiny} className="img-fluid" />
+                  <img src={pic.src.tiny} className="img-fluid" alt={pic.alt} />
                 </a>
               </div>
             );
