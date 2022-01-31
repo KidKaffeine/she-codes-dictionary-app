@@ -6,7 +6,7 @@ import ParticleBackground from "./ParticleBackground";
 function App() {
   return (
     <div className="App">
-      <Dictionary defaultWord="time" />
+      <Dictionary defaultWord="bubble" />
       <ParticleBackground />
     </div>
   );

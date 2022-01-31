@@ -7,6 +7,10 @@
   font-family: "Fjalla One", sans-serif;
 }
 
+.Dictionary small {
+  font-size: 12px;
+}
+
 .Dictionary section {
   border: 1px solid rgb(136, 69, 163);
   border-radius: 5px;
@@ -46,6 +50,16 @@
   color: rgb(204, 184, 212);
 }
 
+.Dictionary footer {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.Dictionary footer a {
+  text-decoration: none;
+  color: rgb(136, 28, 179);
+}
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
 @media only screen and (max-width: 576px) {

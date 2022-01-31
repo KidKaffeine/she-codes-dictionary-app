@@ -14,7 +14,7 @@ export default function Photos(props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={pic.src.tiny} className="img-fluid rounded" />
+                  <img src={pic.src.tiny} className="img-fluid" />
                 </a>
               </div>
             );

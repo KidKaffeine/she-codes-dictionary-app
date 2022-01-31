@@ -54,10 +54,20 @@ export default function Dictionary(props) {
           </button>
         </form>
         <small className="text-muted">
-          suggestion: sea, wine, sun, coffee...{" "}
+          suggested words: sea, sun, coffee...{" "}
         </small>
         <Results results={results} />
         <Photos photo={photo} />
+        <footer>
+          App built by Vanessa Marques. Open source code on{" "}
+          <a
+            href="https://github.com/ZebraDancer/react-dictionary-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub.
+          </a>
+        </footer>
       </div>
     );
   } else {
