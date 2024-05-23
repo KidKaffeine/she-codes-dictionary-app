@@ -65,7 +65,7 @@ export default function Dictionary(props) {
         <footer>
           Open source code on{" "}
           <a
-            href="https://github.com/ZebraDancer/react-dictionary-app"
+            href="https://github.com/KidKaffeine/she-codes-dictionary-app"
             target="_blank"
             rel="noopener noreferrer"
           >
